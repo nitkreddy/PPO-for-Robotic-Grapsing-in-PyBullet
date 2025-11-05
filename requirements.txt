@@ -1,0 +1,6 @@
+torch
+torchvision
+pybullet
+gym==0.26.2
+numpy
+pillow
