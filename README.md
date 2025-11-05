@@ -45,7 +45,7 @@ python visualize.py
 
 ## Notes
 - Python 3.11 recommended  
-- Training time depends on your CPU  
+- Training time depends on your CPU/GPU  
 - The provided model works but still has room for improvement  
 - You can tune rewards and hyperparameters to get better results  
 - Object spawn settings and camera configurations can be modified in the environment file
