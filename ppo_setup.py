@@ -92,12 +92,7 @@ class PPOAgent:
         return logp, entropy, values
 
     def compute_gae(self, rewards, values, dones, last_value):
-        """
-        rewards: [T]
-        values:  [T]
-        dones:   [T]
-        last_value: scalar tensor (value of last obs)
-        """
+        
         T = rewards.size(0)
         advantages = torch.zeros(T, device=self.device)
         last_gae = 0.0
