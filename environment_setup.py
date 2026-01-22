@@ -30,13 +30,7 @@ _preprocess = T.Compose([
 
 
 class KukaVisionEnv:
-    """
-    Thin wrapper around pybullet Kuka env that:
-      - grabs the RGB observation
-      - turns it into a (1, 40, 40) tensor
-      - keeps a stack of last N frames
-      - exposes a Gym-like API
-    """
+    
     def __init__(self, renders=False, max_steps=20, test_mode=False, device=None):
         self.env = KukaDiverseObjectEnv(
             renders=renders,
